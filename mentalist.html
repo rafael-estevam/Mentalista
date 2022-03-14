@@ -11,28 +11,28 @@
 <body>
   <div class="container">
     <h1 class="page-title">
-      Mentalista
+      Charada
     </h1>
     <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg" class="page-logo" alt=""><br>
     <p class="page-subtitle">
       Digite um número de 0 a 100
     </p>
 
-    <fieldset>
-          <legend class="dificuldade">Qual dificuldade deseja jogar?</legend>
+    <fieldset class="seleção">
+      <legend class="dificuldade">Qual dificuldade deseja jogar?</legend>
 
-          <select id="dificuldade" class="seletor">
-            <option value=1>Fácil</option>
-            <option value=2>Médio</option>
-            <option value=3>Difícil</option>
-          </select>
+      <select id="dificuldade" class="seletor" onChange="atualizaDificuldade()">
+        <option value=1 selected>Fácil</option>
+        <option value=2>Médio</option>
+        <option value=3>Difícil</option>
+      </select>
 
-          <input type="number" id="valor" /><br>
+      <input type="number" id="valor" /><br>
     </fieldset>
 
     <button type="button" id="botaoChute" onclick="Chutar()">Chutar</button>
     <button type="submit" onclick="Reiniciar()">Reiniciar</button>
-    
+
     <h2 class="resultado" id="resultado"></h2><br>
     <h2 class="tentativa" id="tentativa"></h2>
   </div>
