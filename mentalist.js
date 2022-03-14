@@ -1,5 +1,5 @@
 function atualizaDificuldade() {
-    let select = document.querySelector("#dificuldade");
+    let select = document.querySelector(".seletor");
     let dificuldadeOptions = select.options[select.selectedIndex];
   
     let dificuldade = dificuldadeOptions.value;
